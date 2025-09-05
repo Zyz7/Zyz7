@@ -5,15 +5,16 @@
 }
 
 :root {
-  --color-bg: #4d4d4d;
-  --color-text: #f1f1f1;
-  --color-hover: #6caca4;
-  --font-base: 'Segoe UI', sans-serif;
   --spacing-xs: 4px;
   --spacing-sm: 8px;
   --spacing-md: 16px;
   --spacing-lg: 32px;
   --border-radius: 6px;
+  --color-bg: #4d4d4d;
+  --color-bg-sc: #333;
+  --color-text: #f1f1f1;
+  --color-hover: #6caca4;
+  --font-base: 'Segoe UI', sans-serif;
 }
 
 html {
@@ -58,8 +59,8 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 1rem 3rem;
-    background-color: var(--color-bg);
-    box-shadow: 0 1px 3px rgba(108, 172, 164, 1);
+    background-color: var(--color-bg-sc);
+    box-shadow: 0 1px 3px rgba(251, 223, 121, 1);
 }
 
 nav a {
@@ -81,12 +82,12 @@ nav ul li {
 }
 
 .hamburger {
-    color: var(--color-text);
-    font-size: 2rem;
     border: 0;
-    background-color: transparent;
+    display: none; 
+    font-size: 2rem;
     cursor: pointer;
-    display: none;
+    color: var(--color-text);
+    background-color: transparent; 
 }
 
 /** Hero Section **/
@@ -95,18 +96,19 @@ nav ul li {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 69rem;
+    max-width: 70rem;
     margin: auto;
 }
 
 .hero img {
-    height: 45rem;
-    width: 45rem;
+    height: 40rem;
+    width: 40rem;
 }
 
 .bio {
-    width: 25rem;
+    width: 30rem;
     padding: 0.75rem;
+    margin-right: 2rem;
     border-radius: var(--border-radius);
     box-shadow: 0px 1px 7.5px 1px rgba(108, 172, 164, 1);
 }
@@ -118,11 +120,12 @@ nav ul li {
 
 /** About **/
 .about {
-    padding: 1rem 6rem;
+    padding: 1rem 7.5rem;
 } 
 
 .about h2 {
     margin-top: 5rem;
+    margin-bottom: 2.5rem;
     text-align: center;
 }
 
@@ -131,11 +134,274 @@ nav ul li {
 }
 
 /** Skills Section **/
+.skills {
+    margin: auto;
+    max-width: 65rem;
+    padding: 1rem 0;
+    text-align: center;
+}
 
+.skills h2 {
+    margin-top: 5rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
 
-@media (prefers-color-scheme: dark) {
+.skills-set {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skills-set img {
+    width: 25%;
+    padding: 20px;
+    margin: 20px 10px;
+    border-radius: var(--border-radius);
+    box-shadow: 0px 3px 15px 3px rgba(51, 51, 51, 1);
+}
+
+/** Projects Section **/
+.projects {
+    padding: 1rem 0;
+}
+
+.projects h2 {
+    margin-top: 5rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.projects-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    width: 25%;
+    padding: 20px;
+    margin: 20px 10px;
+    text-align: center;
+    border-radius: var(--border-radius);
+    box-shadow: 0px 3px 15px 3px rgba(51, 51, 51, 1);
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card h3,
+.project-card p,
+.project-card a {
+    margin-bottom: 1rem;
+}
+
+.project-card a:hover {
+    color: var(--color-hover);
+    border-bottom: 2px solid var(--color-hover);
+}
+
+/** Contact Section **/
+.contact {
+    padding: 1rem 0;
+}
+
+.contact h2 {
+    margin-top: 5rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.contact-form {
+    margin: 0 auto;
+    padding: 1rem;
+    max-width: 40rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0px 1px 7.5px 1px rgba(108, 172, 164, 1);
+}
+
+.contact-form label {
+    display: block;
+    line-height: 2.5rem;
+    font-weight: bold;
+}
+
+.contact-form .input-field {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+}
+
+.contact-form input[type="submit"] {
+    width: 50%;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    margin: 0 25%;
+    margin-top: 15px;
+    font-weight: bold;
+    background-color: #007bff;
+    border-radius: var(--border-radius);
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/** Social Media **/
+.social {
+    right: 1%;
+    bottom: 50%;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+}
+
+.social .social-icon {
+    width: 2rem;
+    height: 2rem;
+    margin-bottom: 10px;
+}
+
+/** Footer Section **/
+footer {
+    margin-top: 4rem;
+    padding: 1.25rem;
+    text-align: center;
+    border-top: 1px solid gray;
+    background-color: var(--color-bg-sc);
+}
+
+footer a:hover {
+    color: var(--color-hover);
+    border-bottom: 2px solid var(--color-hover);
+}
+
+/** Media Queries **/
+@media (prefers-color-scheme: white) {
     :root {
-        background-color: #121212;
-        color: #f1f1f1;
+        --color-bg: #fff;
+        --color-text: #000;
+        --color-bg-sc: #e6e6e6;
+    }
+}
+
+@media screen and (max-width: 1248px) {
+    .hero {
+        max-width: 60rem;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .hero {
+        max-width: 70rem;
+        flex-direction: column;
+    }
+
+    .hero img {
+        width: 60rem;
+    }
+
+    .bio {
+        width: 40rem;
+    }
+
+    .skills {
+        max-width: 40rem;
+    }
+
+    .skills-set img {
+        width: 30%;
+        height: 30%;
+    }
+
+    .project-card {
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .hero {
+        max-width: 70rem;
+        flex-direction: column;
+    }
+
+    .hero img {
+        width: 60rem;
+    }
+
+    .bio {
+        width: 30rem;
+    }
+
+    .skills {
+        max-width: 40rem;
+    }
+
+    .skills-set img {
+        width: 50%;
+        height: 50%;
+    }
+
+    .project-card {
+        width: 50%;
+    }
+
+    .contact-form {
+        max-width: 30rem;     
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        padding: 0.5rem 3rem;
+    }
+
+    nav ul {
+        position: fixed;
+        top: 86px;
+        left: 10%;
+        width: 80%;
+        padding: 1rem;
+        text-align: center;
+        flex-direction: column;
+        transform: translateX(120%);
+        transition: transform 0.5s ease-in;
+        background-color: var(--color-bg-sc);
+    }
+
+    nav ul.show {
+        transform: translateX(0);
+    }
+    
+    .hamburger {
+        display: block;  
+    }
+
+    .social {
+        bottom: 0%;
+    }   
+
+    .bio {
+        width: 20rem;
+    }
+
+    .about {
+        padding: 1rem 5rem;
+    } 
+
+    .project-card {
+        width: 70%;
+    }
+
+    .contact-form {
+        max-width: 20rem;     
     }
 }
