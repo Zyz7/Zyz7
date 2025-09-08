@@ -220,6 +220,10 @@ nav ul li {
     transform: translateY(-10px);
 }
 
+.course-card h3 {
+    margin-top: 1rem;
+}
+
 .course-card h3,
 .course-card p,
 .course-card a {
