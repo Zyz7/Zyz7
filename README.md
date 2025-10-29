@@ -1,5 +1,7 @@
 # portfolio
 
+<img width="1891" height="895" alt="image" src="https://github.com/user-attachments/assets/c33f18ee-d9a8-49b2-a670-9210268212bd" />
+
 ## languages used
 
 - html5
