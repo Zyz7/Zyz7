@@ -35,12 +35,5 @@ integrations, and internal modules. I also work on the frontend when projects re
 ![SQL](https://img.shields.io/badge/SQL-4479A1?logo=mysql&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white)
 
-
-<p align="center">
   <img src="https://github-readme-stats-one-bice.vercel.app/api/top-langs/?username=Zyz7&layout=compact" alt="top langs"/>
-</p>
-
-
-
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Zyz7&layout=compact" alt="top langs"/>
 </p>
