@@ -13,10 +13,11 @@
 <body>
   <!-- Navigation bar -->
   <nav>
-    <h1>zyz7</h1>
+    <h1><a href="#hero" class="ul-li-a">zyz7</a></h1>
     <ul class="ul">
-      <li><a href="#skills" class="ul-li-a">Skills</a></li>
+      <li><a href="#experience" class="ul-li-a">Experience</a></li>
       <li><a href="#projects" class="ul-li-a">Projects</a></li>
+      <li><a href="#skills" class="ul-li-a">Skills</a></li>
       <li><a href="#courses" class="ul-li-a">Courses</a></li>
       <li><a href="#contact" class="ul-li-a">Contact</a></li>
     </ul>
@@ -26,49 +27,54 @@
   <!-- Hero Section -->
   <section id="hero" class="hero">
     <img src="assets/img/drawkit10.svg" alt="" loading="lazy" class="img-hero" />
+
     <div class="bio">
       <h2 class="h2-hero">About Me</h2>
       <p class="text-hero">
-        I am a software development engineer from the Open Distance University
-        of Mexico. I am full stack developer, I prefer to work on the backend 
-        side although I also have projects on the frontend side. In the skills 
-        and projects section you will find some of the languages I have used.
+        I am a backend software developer with ~3 years of professional experience building APIs, 
+        integrations, and internal modules with Go, C#, and Java. I also work on the frontend 
+        side when projects require it. My portfolio below includes the personal and academic 
+        projects I have built with these technologies.
       </p>
     </div>
   </section>
 
-  <!-- Skills Section -->
-  <section id="skills" class="skills">
-    <h2>Skills</h2>
-    <div class="skills-container">
-      <div class="skills-set">
-        <img src="assets/img/icons8-c-sharp-logo.svg" alt="Logo c#" loading="lazy" class="icon" />
-        <img src="assets/img/icons8-java.svg" alt="Logo java" loading="lazy" class="icon" />
-        <img src="assets/img/golang.svg" alt="Logo go" loading="lazy" class="icon" />
+  <!-- Experience Section -->
+  <section id="experience" class="experience">
+    <h2>Experience</h2>
+
+    <div class="experience-container">
+      <div class="experience-card">
+        <h3>Backend Developer (Go)</h3>
+        <p class="experience-details">
+          Development of FaaS, APIs, and third-party API integrations with Go. 
+          Migration of modules from Python to Go. MySQL query optimization and 
+          deployments with Docker.
+        </p>
       </div>
 
-      <div class="skills-set">
-        <img src="assets/img/icons8-php.svg" alt="Logo php" loading="lazy" class="icon" />
-        <img src="assets/img/icons8-python.svg" alt="Logo python" loading="lazy" class="icon" />
-        <img src="assets/img/sql.png" alt="Logo sql" loading="lazy" class="icon" />
+      <div class="experience-card">
+        <h3>Backend Developer (C#)</h3>
+        <p class="experience-details">
+          Development and optimization of key modules for the internal system and 
+          intranet. REST APIs with C# and Oracle/MySQL database administration.
+        </p>
       </div>
 
-      <div class="skills-set">
-        <img src="assets/img/icons8-c.svg" alt="Logo c" loading="lazy" class="icon" />
-        <img src="assets/img/icons8-javascript.svg" alt="Logo javascript" loading="lazy" class="icon" />
-        <img src="assets/img/icons8-html5-480.svg" alt="Logo html5" loading="lazy" class="icon" />
+      <div class="experience-card">
+        <h3>Backend Developer (Java)</h3>
+        <p class="experience-details">
+          Module optimization and database stored procedures. APIs with Spring Boot deployed on JBoss.
+        </p>
       </div>
 
-      <div class="skills-set">
-        <img src="assets/img/icons8-css3.svg" alt="Logo css" loading="lazy" class="icon" />
-        <img src="assets/img/icons8-git.svg" alt="Logo git" loading="lazy" class="icon" />
-        <img src="assets/img/icons8-docker.svg" alt="" loading="lazy" class="icon" />
+      <div class="experience-card">
+        <h3>Web Developer (Internship)</h3>
+        <p class="experience-details">
+          End-to-end development of web applications, from design to deployment on Heroku.
+        </p>
       </div>
 
-      <div class="skills-set">
-        <img src="assets/img/icons8-bootstrap.svg" alt="Logo bootstrap" loading="lazy" class="icon" />
-        <img src="assets/img/icons8-spring-boot.svg" alt="Logo springboot" loading="lazy" class="icon" />
-      </div>
     </div>
   </section>
 
@@ -78,62 +84,105 @@
 
     <div class="projects-container">
       <div class="project-card">
-        <img src="assets/img/Screenshot123702.png" alt="Conversion project" loading="lazy" class="project-pic" />
-        <h3>Numerical Conversion</h3>
+        <img src="assets/img/Screenshot124134.png" alt="Snippet Box" loading="lazy" class="project-pic" />
+        <h3>Snippet Box</h3>
         <p class="project-details">
-          Project carried out with lenguage c and jdoodle in command line mode.
+          A web application for saving and organizing code snippets, built with Go, HTML, CSS, and MySQL. 
+          Designed for developers who need a quick, searchable place to store reusable code. 
         </p>
-        <a href="https://www.jdoodle.com/ia/1JSi" target="_blank" class="project-link">Try</a>
-      </div>
-    
-      <div class="project-card">
-        <img src="assets/img/Screenshot123846.png" alt="Dashboard project" loading="lazy" class="project-pic" />
-        <h3>Dashboard</h3>
-        <p class="project-details">
-          Project carried out with html, css, javascript and the bootstrap.
-        </p>
-        <a href="https://dashboard-wry6.onrender.com/" target="_blank" class="project-link">Try</a>
-      </div>
-
-      <div class="project-card">
-        <img src="assets/img/Screenshot124254.png" alt="Blog laravel" loading="lazy" class="project-pic" />
-        <h3>Blog laravel</h3>
-        <p class="project-details">
-          Project carried out with lenguages php, html, css, postgreesql, laravel.  
-        </p>
-        <a href="https://blog-o0bg.onrender.com/" target="_blank" class="project-link">Try</a>
-      </div>
-
-      <div class="project-card">
-        <img src="assets/img/Screenshot130913.png" alt="SysPharmacy" loading="lazy" class="project-pic" />
-        <h3>SysPharmacy</h3>
-        <p class="project-details">
-          Project carried out with lenguages java, swing, sqlite only for Linux.  
-        </p>
-        <a href="https://drive.proton.me/urls/6S6PE8DAFG#t98UpghPl7Kd" target="_blank" class="project-link">Try</a>
+        <a href="https://snippetbox-cbxz.onrender.com/" target="_blank" class="project-link">Try</a>
       </div>
 
       <div class="project-card">
         <img src="assets/img/Screenshot124725.png" alt="ApiRest" loading="lazy" class="project-pic" />
         <h3>ApiRest</h3>
         <p class="project-details">
-          Project carried out with lenguages c#, swagger and sqlite.  
+          A REST API developed in C# and documented with Swagger, backed by SQLite. Implements CRUD 
+          operations with proper endpoint organization and error handling.
         </p>
         <a href="https://apirest-yogs.onrender.com" target="_blank" class="project-link">Try</a>
       </div>
 
       <div class="project-card">
-        <img src="assets/img/Screenshot124134.png" alt="Snippet Box" loading="lazy" class="project-pic" />
-        <h3>Snippet Box</h3>
+        <img src="assets/img/Screenshot130913.png" alt="SysPharmacy" loading="lazy" class="project-pic" />
+        <h3>SysPharmacy</h3>
         <p class="project-details">
-          Project carried out with lenguages golang, html, css and mysql.  
+          A desktop inventory and sales system for a pharmacy, built with Java, Swing, and SQLite (Linux). 
+          Designed for offline environments where simplicity and reliability matter. 
         </p>
-        <a href="https://snippetbox-cbxz.onrender.com/" target="_blank" class="project-link">Try</a>
+        <a href="https://drive.proton.me/urls/6S6PE8DAFG#t98UpghPl7Kd" target="_blank" class="project-link">Try</a>
+      </div>
+
+      <div class="project-card">
+        <img src="assets/img/Screenshot124254.png" alt="Blog laravel" loading="lazy" class="project-pic" />
+        <h3>Blog laravel</h3>
+        <p class="project-details">
+        A full blog platform built with PHP, Laravel, and PostgreSQL. Includes post management, authentication, 
+        and a responsive frontend.
+        </p>
+        <a href="https://blog-o0bg.onrender.com/" target="_blank" class="project-link">Try</a>
+      </div>
+
+      <div class="project-card">
+        <img src="assets/img/Screenshot123846.png" alt="Dashboard project" loading="lazy" class="project-pic" />
+        <h3>Dashboard</h3>
+        <p class="project-details">
+          An interactive dashboard built with HTML, CSS, JavaScript, and Bootstrap to visualize key metrics in a 
+          clean, responsive layout.
+        </p>
+        <a href="https://dashboard-wry6.onrender.com/" target="_blank" class="project-link">Try</a>
+      </div>
+
+      <div class="project-card">
+        <img src="assets/img/Screenshot123702.png" alt="Conversion project" loading="lazy" class="project-pic" />
+        <h3>Numerical Conversion</h3>
+        <p class="project-details">
+          A command-line tool written in C that converts numbers between different bases (binary, octal, decimal, 
+          hexadecimal). Built as an exercise in low-level programming and algorithm design.
+        </p>
+        <a href="https://www.jdoodle.com/ia/1JSi" target="_blank" class="project-link">Try</a>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div class="skills-set">
+        <img src="assets/img/golang.svg" alt="Logo go" loading="lazy" class="icon" title="Go language" />
+        <img src="assets/img/icons8-c-sharp-logo.svg" alt="Logo c#" loading="lazy" class="icon" title="C# language" />
+        <img src="assets/img/icons8-java.svg" alt="Logo java" loading="lazy" class="icon" title="Java language" />
+      </div>
+
+      <div class="skills-set">
+        <img src="assets/img/icons8-python.svg" alt="Logo python" loading="lazy" class="icon" title="Python language" />
+        <img src="assets/img/icons8-php.svg" alt="Logo php" loading="lazy" class="icon" title="PHP language" />
+        <img src="assets/img/icons8-c.svg" alt="Logo c" loading="lazy" class="icon" title="C language" />
+      </div>
+
+      <div class="skills-set">
+        <img src="assets/img/icons8-spring-boot.svg" alt="Logo springboot" loading="lazy" class="icon" title="Spring Boot framework" />
+        <img src="assets/img/icons8-laravel-100.png" alt="Logo laravel" loading="lazy" class="icon" title="Laravel framework" />
+        <img src="assets/img/icons8-reaccionar-100.png" alt="Logo react" loading="lazy" class="icon" title="React framework" />
+      </div>
+
+      <div class="skills-set">
+        <img src="assets/img/icons8-bootstrap.svg" alt="Logo bootstrap" loading="lazy" class="icon" title="Bootstrap framework" />
+        <img src="assets/img/icons8-html5-480.svg" alt="Logo html5" loading="lazy" class="icon" title="HTML language" />
+        <img src="assets/img/icons8-css3.svg" alt="Logo css" loading="lazy" class="icon" title="CSS styles" />
+      </div>
+
+      <div class="skills-set">
+        <img src="assets/img/sql.png" alt="Logo sql" loading="lazy" class="icon" title="SQL language" />
+        <img src="assets/img/icons8-git.svg" alt="Logo git" loading="lazy" class="icon" title="Git" />
+        <img src="assets/img/icons8-docker.svg" alt="" loading="lazy" class="icon" title="Docker" />
       </div>
     </div>
   </section>
 
-  <!-- Courses -->
+  <!-- Courses Section -->
   <section id="courses" class="courses">
     <h2>Courses</h2>
     <div class="courses-container">
@@ -144,6 +193,15 @@
           Intermediate python with thirty hours of study
         </p>
         <a href="https://www.epc.gob.mx/acreditacion/EDC-eCr1Dd" target="_blank" class="course-link">Check it out</a>
+      </div>
+
+      <div class="course-card">
+        <img src="assets/img/2026-11-11_17-03-50.png" alt="Infotec course" loading="lazy" class="course-pic" />
+        <h3>Python fundamentals I</h3>
+        <p class="course-details">
+          Python fundamentals with thirty hours of study
+        </p>
+        <a href="https://www.netacad.com/es/courses/python-essentials-1?courseLang=en-US" target="_blank" class="course-link">Check it out</a>
       </div>
 
       <div class="course-card">
