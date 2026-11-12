@@ -7,7 +7,7 @@ integrations, and internal modules. I also work on the frontend when projects re
 - 🔭 Currently: developing FaaS, APIs, and third-party integrations with **Go**
 - 🛠️ Experienced with: **Go, C#, Java, Python, SQL, Docker, Spring Boot**
 - 🌐 Portfolio: [zyz7.github.io/Zyz7](https://zyz7.github.io/Zyz7/)
-- 📫 Reach me at: [LinkedIn](https://www.linkedin.com/in/TU-USUARIO) · Telegram
+- 📫 Reach me at: [LinkedIn](https://www.linkedin.com/in/mario-alberto-zayas-gonzález-520b97260)
 
 ### 💼 Highlighted projects
 
@@ -35,6 +35,12 @@ integrations, and internal modules. I also work on the frontend when projects re
 ![SQL](https://img.shields.io/badge/SQL-4479A1?logo=mysql&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white)
 
+
 <p align="center">
+  <img src="https://github-readme-stats-one-bice.vercel.app/api/top-langs/?username=Zyz7&layout=compact" alt="top langs"/>
+</p>
+
+
+
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Zyz7&layout=compact" alt="top langs"/>
 </p>
